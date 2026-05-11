@@ -6,7 +6,6 @@ def zscore_standardize(X, axis=0, eps=1e-12):
     Return np.ndarray (float).
     """
     # Write code here
-    X = np.array(X)
-    dim = X.ndim
+    X = np.array(X)    
 
     return (X - np.mean(X, axis=axis, keepdims=True)) / (np.std(X, axis=axis, keepdims=True) + eps)
